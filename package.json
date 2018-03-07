@@ -1,0 +1,30 @@
+{
+  "name": "wineberrypi.client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js",
+    "lint:report": "npm run lint -- -f checkstyle --output-file target/checkstyle.xml",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wineberrypi/client.git"
+  },
+  "author": "bhaskarmelkani <melkani.bhaskar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wineberrypi/client/issues"
+  },
+  "homepage": "https://github.com/wineberrypi/client#readme",
+  "dependencies": {
+    "mqtt": "^2.15.0",
+    "onoff": "^1.1.9",
+    "pigpio": "^0.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0"
+  }
+}
